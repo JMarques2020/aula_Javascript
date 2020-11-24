@@ -1,10 +1,10 @@
 
-var nome="José Marques";
+/*var nome="José Marques";
 var idade= 44;
 var idade2= 10;
 
 var n1= 44;
-var n2= 10;
+var n2= 10;*/
 
 //var frase = "Japão é o melhor time do mundo";
 //console.log(nome);
@@ -69,9 +69,9 @@ if (idade>=18){
 
 // uso do While
 
-var count = 0;
+/*var count = 0;
 
-/*while (count <=5){
+while (count <=5){
     console.log(count);
     count=count+1;
 };*/
@@ -105,12 +105,89 @@ for(count=0; count <=5; count ++){
 /*var d = new Date();
 alert(d);*/
 
-var d = new Date();
-//alert(d.getMonth()+1); - retorna apenas o mês em numeral
+// Meses, dias, horas, minutos
+/*var d = new Date();
+alert(d.getMonth()+1); - retorna apenas o mês em numeral
 alert(d.getDay());
 alert(d.getHours());
 alert(d.getMinutes());
+*/
+
+// funções em js
+/*
+function soma (n1, n2){
+    return n1 + n2;
+}*
+
+alert(soma(5, 10));
+*/
+/*
+function setReplace(frase, nome, novo_nome){
+    return frase.replace(nome, novo_nome)
+}
+
+alert(setReplace("Vai Japão", "Japão", "Brasil"));
+*/
+/*
+function validaIdade (idade){
+    var validar;
+
+    if (idade>=18){
+        validar=true;
+    } else{
+        validar=false;
+    }
+
+    return validar
+}
+var idade = prompt ("Qual sua Idade?");
+console.log(validaIdade(idade));*/
+
+// Variável (var) fora da função chama-se variável global e variável dentro da função é chamada de local;
+
+/*function botao() {
+    alert("Obrigado por clicar!");
+};*/
+
+// a tag <b></b> torna em negrito e pode ser usada tanto no html ou no js
+
+function botao(){
+    document.getElementById("agradecimento").innerHTML= "<b>Obrigado por clicar!!</b>";
+
+    //document.getElementById("agradecimento");
+    //console.log(document.getElementById("agradecimento"));
+}
+
+function redirecionar(){
+    window.open("https://globallabs.academy/");
+    window.location.href="https://globallabs.academy/"; // abre na mesma janela/aba
+}
+
+function trocar(){
+    document.getElementById("mousemove").innerHTML= "Obrigado por passar o mouse";
+    //alert("trocar texto")
+}
+
+function voltar(){
+    document.getElementById("mousemove").innerHTML= "Passe o mouse aqui";
+
+}
 
 
+function trocar2(elemento){
+    elemento.innerHTML= "Obrigado por passar o mouse";
+}
 
+function voltar2(elemento){
+    elemento.innerHTML= "Passe o mouse aqui";
 
+}
+
+function load(){
+    alert("página carregada!!")
+}
+
+function funcaoChange(elemento){
+
+    console.log(elemento.value);
+}
